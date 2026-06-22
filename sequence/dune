@@ -1,6 +1,6 @@
+; disabled: requires internal unreleased packages
+
 (library
  (name parallel_sequence)
  (public_name parallel.sequence)
- (libraries parallel_kernel unboxed_datatypes)
- (preprocess
-  (pps ppx_jane)))
+ (enabled_if false))

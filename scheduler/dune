@@ -1,7 +1,6 @@
+; disabled: requires internal unreleased packages
+
 (library
  (name parallel_scheduler)
  (public_name parallel.scheduler)
- (libraries await base concurrent concurrent.in_thread parallel_kernel
-   portable portable_mpmc_queue portable_ws_deque threads)
- (preprocess
-  (pps ppx_jane)))
+ (enabled_if false))

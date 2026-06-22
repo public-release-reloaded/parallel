@@ -1,6 +1,5 @@
+; disabled: requires internal unreleased packages
 (library
  (name parallel_capsule)
  (public_name parallel.capsule)
- (libraries await await.capsule base parallel_kernel portable.kernel)
- (preprocess
-  (pps ppx_jane)))
+ (enabled_if false))
