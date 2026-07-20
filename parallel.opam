@@ -12,25 +12,25 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "async"
-  "await"
-  "base"
-  "base_bigstring"
-  "bignum"
-  "concurrent"
-  "core"
-  "expect_test_helpers_core"
-  "handled_effect"
-  "portable"
+  "async" {>= "v0.18~" & < "v0.19~"}
+  "await" {>= "v0.18~" & < "v0.19~"}
+  "base" {>= "v0.18~" & < "v0.19~"}
+  "base_bigstring" {>= "v0.18~" & < "v0.19~"}
+  "bignum" {>= "v0.18~" & < "v0.19~"}
+  "concurrent" {>= "v0.18~" & < "v0.19~"}
+  "core" {>= "v0.18~" & < "v0.19~"}
+  "expect_test_helpers_core" {>= "v0.18~" & < "v0.19~"}
+  "handled_effect" {>= "v0.18~" & < "v0.19~"}
+  "portable" {>= "v0.18~" & < "v0.19~"}
   "portable_mpmc_queue"
-  "portable_ws_deque"
-  "ppx_jane"
-  "unboxed"
+  "portable_ws_deque" {>= "v0.18~" & < "v0.19~"}
+  "ppx_jane" {>= "v0.18~" & < "v0.19~"}
+  "unboxed" {>= "v0.18~" & < "v0.19~"}
   "unboxed_datatypes"
-  "unique"
+  "unique" {>= "v0.18~" & < "v0.19~"}
   "vec"
   "base-threads"
-  "dune"                     {>= "3.17.0"}
+  "dune" {>= "3.17.0"}
 ]
 available: arch != "x86_32"
 synopsis: "OxCaml Parallelism"
